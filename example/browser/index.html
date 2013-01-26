@@ -16,8 +16,8 @@
              ctx.drawImage(img,x,y,base,base);
         })
     };
-    var imgset = new ImageSet;
-    imgset
+    var preload = new Preloader;
+    preload
         .add('Lenna.png')
         .add('teapot-phong-illuminated.png') 
         .success(function(images) {drawIt(images)})
