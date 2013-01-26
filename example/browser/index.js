@@ -47,7 +47,7 @@
         };
     };
     if (exports.Window !== undefined) {
-        exports.ImageSet =  ImageSet;
+        exports.Preloader = ImageSet;
     } else if ((module !== undefined) && (module.exports !== undefined)) {
         exports = module.exports = ImageSet;
     }
