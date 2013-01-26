@@ -16,13 +16,13 @@ Or,
 
 In your browser
 ---------------
+
+Just copy the index.js file so that you can load it from HTML. Feel free to rename it.
     
     <script src='index.js'></script>
     <script>
         var Preload = new Preload;
     </script>
-
-Where index.js is the file found in this directory. 
 
 
 How To Use
