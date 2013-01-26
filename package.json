@@ -1,0 +1,22 @@
+{
+  "name": "imagepreloader",
+  "version": "0.0.1",
+  "description": "Preload images in either browser or node",
+  "homepage": "https://github.com/rook2pawn/node-imagepreloader",
+  "main": "index.js",
+  "keywords" : [
+    "image",
+    "load",
+    "preload",
+    "canvas"
+   ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rook2pawn/node-imagepreloader.git"
+  },
+  "author": "David Wee <rook2pawn@gmail.com> (http://rook2pawn.com)",
+  "license": "MIT/X11"
+}

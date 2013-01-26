@@ -1,0 +1,28 @@
+<html> 
+<head>
+<title>selectors</title>
+    <script type='text/javascript' src='index.js'></script>
+</head>
+<body>
+<canvas id='mycanvas' width=512 height=512></canvas>
+<script type='text/javascript'>
+    var canvas = document.getElementById('mycanvas');
+    var ctx = canvas.getContext('2d');
+    var drawIt = function(images) {
+        var base = 256;
+        images.forEach(function(img,idx) {
+             var x = idx*base;
+             var y = x;
+             ctx.drawImage(img,x,y,base,base);
+        })
+    };
+    var imgset = new ImageSet;
+    imgset
+        .add('Lenna.png')
+        .add('teapot-phong-illuminated.png') 
+        .success(function(images) {drawIt(images)})
+        .error(function(msg) { console.log("Error:" + msg) })
+        .done();
+</script>
+</body>
+</html>
