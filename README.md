@@ -9,7 +9,8 @@ In Node
 You can either 
 
     var Preload = require('imagepreloader');
-    var preload = new Preload;
+    var Image = require('canvas').Image;
+    var preload = new Preload({Image:Image});
 
 Or,
 
