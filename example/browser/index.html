@@ -16,12 +16,15 @@
              ctx.drawImage(img,x,y,base,base);
         })
     };
+    var myerror = function(msg) {
+        console.log(msg);
+    }
     var preload = new Preloader;
     preload
         .add('Lenna.png')
         .add('teapot-phong-illuminated.png') 
-        .success(function(images) {drawIt(images)})
-        .error(function(msg) { console.log("Error:" + msg) })
+        .success(drawIt)
+        .error(myerror)
         .done();
 </script>
 </body>
