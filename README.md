@@ -23,3 +23,15 @@ In your browser
     </script>
 
 Where index.js is the file found in this directory. 
+
+
+How To Use
+==========
+
+Just open your browser to 
+
+    example/browser/index.html
+
+Or cd /example/node and run 
+
+    node test.js
