@@ -42,6 +42,7 @@
                         that.loaded();
                     };
                     img.src = src;
+                    img.name = src.slice(src.lastIndexOf('/')+1);
                     myimages.push(img);
                 },this);
         };
