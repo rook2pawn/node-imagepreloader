@@ -43,7 +43,7 @@
                     };
                     img.src = src;
                     img.name = src.slice(src.lastIndexOf('/')+1);
-                    myimages[image.name] = img;
+                    myimages[img.name] = img;
                 },this);
         };
     };
