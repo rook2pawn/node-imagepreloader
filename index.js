@@ -8,7 +8,7 @@
         var count = 0;
         if (params.Image !== undefined)
             Image = params.Image;
-        var myimages = [];
+        var myimages = {};
         this.add = function(src) {
             list.push(src);
             return this
@@ -43,7 +43,7 @@
                     };
                     img.src = src;
                     img.name = src.slice(src.lastIndexOf('/')+1);
-                    myimages.push(img);
+                    myimages[image.name] = img;
                 },this);
         };
     };
