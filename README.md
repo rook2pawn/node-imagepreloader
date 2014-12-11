@@ -25,6 +25,17 @@ Just copy the index.js file so that you can load it from HTML. Feel free to rena
     </script>
 
 
+Then
+----
+
+    var preload = new Preloader;
+    preload
+        .add('Lenna.png')
+        .add('teapot-phong-illuminated.png') 
+        .success(drawIt)
+        .error(myerror)
+        .done();
+
 How To Use
 ==========
 
