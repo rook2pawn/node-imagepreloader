@@ -21,7 +21,7 @@ Just copy the index.js file so that you can load it from HTML. Feel free to rena
     
     <script src='index.js'></script>
     <script>
-        var Preload = new Preload;
+        var preload = new Preloader;
     </script>
 
 
